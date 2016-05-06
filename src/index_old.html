@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Navigation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="jquery.slideme2.js"></script>
+    <link rel="stylesheet" href="slideme.css">
+    <style>
+        .slideme {
+            max-width: 990px;
+            max-height: 450px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" align="center">
+        <ul class="slideme">
+            <li><img src="img/01.png" /></li>
+            <li><img src="img/02.png" /></li>
+            <li><img src="img/03.png" /></li>
+            <li><img src="img/04.png" /></li>
+            <li><img src="img/05.png" /></li>
+            <li><img src="img/06.png" /></li>
+            <li><img src="img/07.png" /></li>
+            <li><img src="img/08.png" /></li>
+            <li><img src="img/09.png" /></li>
+            <li><img src="img/10.png" /></li>
+            <li><img src="img/11.png" /></li>
+            <li><img src="img/12.png" /></li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(
+            function () {
+                $("#main").slideme({
+                    arrows: false,
+                    touch: true,
+                    autoslide: true,
+                    interval: 1000,
+                    resizable: {
+                        width: 990,
+                        height: 450
+                    }
+                });
+                //$("#main").slideme('play');
+        });
+    </script>
+</body>
+</html>
