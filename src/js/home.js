@@ -7,8 +7,8 @@ $(document).ready(function() {
         direction: 'horizontal',
         verticalCentered: true,
         sectionsColor: [],
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        menu: '#myMenu',
+        anchors: ['firstLandmark', 'secondLandmark', 'thirdLandmark', 'fourthLandmark', 'lastLandmark'],
+        menu: '#menu',
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: false,
@@ -18,7 +18,7 @@ $(document).ready(function() {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3', 'section4']
+            'tooltips': ['section1', 'section2', 'section3', 'section4', 'section5']
         },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
