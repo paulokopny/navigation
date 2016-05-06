@@ -5,7 +5,7 @@
 $(document).ready(function() {
     $('#pagepiling').pagepiling({
         direction: 'horizontal',
-        verticalCentered: true,
+        verticalCentered: false,
         sectionsColor: [],
         anchors: ['firstLandmark', 'secondLandmark', 'thirdLandmark', 'fourthLandmark', 'lastLandmark'],
         menu: '#menu',

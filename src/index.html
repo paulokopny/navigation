@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Easy Navigation</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="lib/jquery.pagepiling.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -13,20 +16,22 @@
 
 </head>
 <body>
-<div id="main">
-    <ul id="myMenu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+<div class="container-fluid" id="main">
+    <ul id="menu" class="nav nav-tabs">
+        <li data-menuanchor="firstLandmark" role="presentation" class="active"><a href="#firstLandmark">First
+            Landmark</a></li>
+        <li data-menuanchor="secondLandmark" role="presentation"><a href="#secondLandmark">Second Landmark</a></li>
+        <li data-menuanchor="thirdLandmark" role="presentation"><a href="#thirdLandmark">Third Landmark</a></li>
+        <li data-menuanchor="fourthLandmark" role="presentation"><a href="#fourthLandmark">Fourth Landmark</a></li>
+        <li data-menuanchor="lastLandmark" role="presentation"><a href="#lastLandmark">Last Landmark</a></li>
     </ul>
     <div id="pagepiling">
         <div class="section" style="background-color: white;">
-            <div style="text-align: center;">
-                <img src="img/01.png" height="350" width="40%"/>
-                <img src="img/02.png" height="350" width="40%"/>
+            <div class="row" style="text-align: center;">
+                <img src="img/01.png" height="350" width="40%" draggable="false"/>
+                <img src="img/02.png" height="350" width="40%" draggable="false"/>
             </div>
-            <div style="text-align: center;">
+            <div class="row" style="text-align: center;">
                 <p>You are now on the Kyrkogårdsgatan street.</p>
                 <p>Keep going straight on the direction shown in the left image until you reach the junction shown on
                     the right image.</p>
@@ -34,11 +39,11 @@
             </div>
         </div>
         <div class="section" style="background-color: white;">
-            <div style="text-align: center;">
-                <img src="img/03.png" height="350" width="40%"/>
-                <img src="img/04.png" height="350" width="40%"/>
+            <div class="row" style="text-align: center;">
+                <img src="img/03.png" height="350" width="40%" draggable="false"/>
+                <img src="img/04.png" height="350" width="40%" draggable="false"/>
             </div>
-            <div style="text-align: center;">
+            <div class="row" style="text-align: center;">
                 <p>After the left turn, you are now on the Skolgatan street.</p>
                 <p>Keep going straight on the direction shown in the left image until you reach the junction shown on
                     the right image.</p>
@@ -46,11 +51,11 @@
             </div>
         </div>
         <div class="section" style="background-color: white;">
-            <div style="text-align: center;">
-                <img src="img/05.png" height="350" width="40%"/>
-                <img src="img/06.png" height="350" width="40%"/>
+            <div class="row" style="text-align: center;">
+                <img src="img/05.png" height="350" width="40%" draggable="false"/>
+                <img src="img/06.png" height="350" width="40%" draggable="false"/>
             </div>
-            <div style="text-align: center;">
+            <div class="row" style="text-align: center;">
                 <p>After the right turn, you are now on the Sysslomansgatan street.</p>
                 <p>Keep going straight on the direction shown in the left image until you reach the junction shown on
                     the right image.</p>
@@ -58,11 +63,11 @@
             </div>
         </div>
         <div class="section" style="background-color: white;">
-            <div style="text-align: center;">
-                <img src="img/07.png" height="350" width="40%"/>
-                <img src="img/08.png" height="350" width="40%"/>
+            <div class="row" style="text-align: center;">
+                <img src="img/07.png" height="350" width="40%" draggable="false"/>
+                <img src="img/08.png" height="350" width="40%" draggable="false"/>
             </div>
-            <div style="text-align: center;">
+            <div class="row" style="text-align: center;">
                 <p>After the left turn, you are now on the S:t Olafsgatan street.</p>
                 <p>Keep going straight on the direction shown in the left image until you reach the junction shown on
                     the right image.</p>
@@ -70,39 +75,17 @@
             </div>
         </div>
         <div class="section" style="background-color: white;">
-            <div style="text-align: center;">
-                <img src="img/09.png" height="350" width="40%"/>
-                <img src="img/12.png" height="350" width="40%"/>
+            <div class="row" style="text-align: center;">
+                <img src="img/09.png" height="350" width="40%" draggable="false"/>
+                <img src="img/12.png" height="350" width="40%" draggable="false"/>
             </div>
-            <div style="text-align: center;">
+            <div class="row" style="text-align: center;">
                 <p>After the right turn, you are now on the Svartbäcksgatan street.</p>
                 <p>Keep going straight on the direction shown in the left image.</p>
                 <p>When you see the landmark shown on the right image, you have reached your destination.</p>
             </div>
         </div>
     </div>
-    <!--<table>
-        <tr>
-            <td><img src="img/01.png" height="350" width="350"/></td>
-            <td><img src="img/02.png" height="350" width="350"/></td>
-            <td><img src="img/03.png" height="350" width="350"/></td>
-            <td><img src="img/04.png" height="350" width="350"/></td>
-            <td><img src="img/05.png" height="350" width="350"/></td>
-            <td><img src="img/06.png" height="350" width="350"/></td>
-            <td><img src="img/07.png" height="350" width="350"/></td>
-            <td><img src="img/08.png" height="350" width="350"/></td>
-            <td><img src="img/09.png" height="350" width="350"/></td>
-            <td><img src="img/10.png" height="350" width="350"/></td>
-            <td><img src="img/11.png" height="350" width="350"/></td>
-            <td><img src="img/12.png" height="350" width="350"/></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <p>You are now on the Kyrkogårdsgatan street. Keep going straigt on the direction shown in the left
-                    image.</p>
-            </td>
-        </tr>
-    </table>-->
 </div>
 </body>
 </html>
