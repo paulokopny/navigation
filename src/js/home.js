@@ -5,10 +5,10 @@
 $(document).ready(function() {
     $('#pagepiling').pagepiling({
         direction: 'horizontal',
-        verticalCentered: true,
+        verticalCentered: false,
         sectionsColor: [],
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        menu: '#myMenu',
+        anchors: ['firstLandmark', 'secondLandmark', 'thirdLandmark', 'fourthLandmark', 'lastLandmark'],
+        menu: '#menu',
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: false,
@@ -18,7 +18,7 @@ $(document).ready(function() {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3', 'section4']
+            'tooltips': ['First Landmark', 'Second Landmark', 'Third Landmark', 'Fourth Landmark', 'Last Landmark']
         },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,

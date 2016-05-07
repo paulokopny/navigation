@@ -1,4 +1,8 @@
-.pp-tableCell {
-    vertical-align: top;
-    padding-top: 50px;
+.row {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section {
+    background-color: white;
 }

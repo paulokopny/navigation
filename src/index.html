@@ -5,7 +5,10 @@
     <title>Easy Navigation</title>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="lib/jquery.pagepiling.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -32,15 +35,15 @@
     </style>
 </head>
 <body>
-<div id="main">
-    <div class="hidden">
-        <ul id="myMenu">
-            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-            <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-            <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-            <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-        </ul>
-    </div>
+<div class="container-fluid" id="main">
+    <ul id="menu" class="nav nav-tabs">
+        <li data-menuanchor="firstLandmark" role="presentation" class="active"><a href="#firstLandmark">First
+            Landmark</a></li>
+        <li data-menuanchor="secondLandmark" role="presentation"><a href="#secondLandmark">Second Landmark</a></li>
+        <li data-menuanchor="thirdLandmark" role="presentation"><a href="#thirdLandmark">Third Landmark</a></li>
+        <li data-menuanchor="fourthLandmark" role="presentation"><a href="#fourthLandmark">Fourth Landmark</a></li>
+        <li data-menuanchor="lastLandmark" role="presentation"><a href="#lastLandmark">Last Landmark</a></li>
+    </ul>
     <div id="pagepiling">
         <div class="section" style="background-color: white;">
             <div class="fill">
